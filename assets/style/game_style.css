@@ -4,12 +4,12 @@
 */
 /* style de police */
 @font-face {
-    src: url('../Fonts/Rajdhani-Medium.ttf');
+    src: url('../fonts/Rajdhani/Rajdhani-Medium.ttf');
     font-family: 'Rajdhani-Medium';
 }
 
 @font-face {
-    src: url('../Fonts/Spacegrotesk.ttf');
+    src: url('../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf');
     font-family: 'SpaceGrotesk-Regular';
 }
 
@@ -17,7 +17,6 @@
 
 html {
     color: white;
-    /*font-family: 'Rajdhani-Medium';*/
     overflow-x: hidden;
     font-size: 1.25vw;
     font-family: 'Rajdhani-Medium';
@@ -87,7 +86,7 @@ body {
 
 
 #header-page h1 {
-    background-image: url('../Image/Logos/logohome.png');
+    background-image: url('../Logos/logohome.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 10vw;
@@ -96,15 +95,12 @@ body {
 }
 
 header {
-    padding: 2em 6.375em 2em 6.375em;
-    border: 0.1875em solid rgba(188, 187, 189, 0.2);
+    padding: 2em 2em 0em 2em;
+    border: 2px solid rgba(188, 187, 189, 0.2);
     display: flex;
     justify-content: space-between;
 }
 
-/*  
-    || NAV STYLE 
-*/
 nav {
     float: right;
 }
@@ -136,7 +132,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 12em 6.375em 3.125em 6.375em;
-    border: 0.1875em solid rgba(188, 187, 189, 0.2);
+    border: 2px solid rgba(188, 187, 189, 0.2);
     border-top: none;
     border-bottom: none;
 }
@@ -192,7 +188,7 @@ ul li {
 
 
 main {
-    border: 0.1875em solid rgba(188, 187, 189, 0.2);
+    border: 1px solid rgba(188, 187, 189, 0.2);
     padding: 1.25em;
     border-bottom: none;
 }
@@ -309,13 +305,14 @@ main {
     visibility: visible;
     transform: translateX(-4em); /* Décalage initial de -20px vers la gauche */
     transition: opacity 3s ease, visibility 3s ease, transform 3s ease;
+    margin-right: -5%;
 }
 
-.fade-zoom {
+/* .fade-zoom {
     opacity: 0;
     visibility: hidden;
     transition: opacity 3s ease, visibility 3s ease, transform 3s ease;
-    transform: scale(0); /* Définit l'échelle initiale de 0 */
+    transform: scale(0); 
 }
 
 @keyframes fade-in {
@@ -327,7 +324,7 @@ main {
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 .show-zoom {
   opacity: 0;
